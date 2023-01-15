@@ -7,6 +7,6 @@ end
 begin
     X1=diabetes.Pregnancies;X2=diabetes.Glucose;X3=diabetes.BloodPressure;X4=diabetes.SkinThickness;X5=diabetes.Insulin;X6=diabetes.BMI;X7=diabetes.DiabetesPedigreeFunction;X8=diabetes.Age;Y=diabetes.Outcome
     X=[X1,X2,X3,X4,X5,X6,X7,X8];t=Table(X=X,Y=Y);
-    scatter(X=[X1,X2,X3,X4,X5,X6,X7,X8],Y,ma=0.5,ms=5)
+    scatter(X=[X1,X2,X3,X4,X5,X6,X7,X8],Y,ma=0.5,ms=5,legend=false,title="Diabetic Patients")
 end
-X=[X1,X2,X3,X4,X5,X6,X7,X8];t=Table(X=X,Y=Y)
+scatter(X,Y)
